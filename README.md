@@ -685,9 +685,9 @@ This resembles numerical time integration methods used in CFD.
 
 The final state update is:
 
-[
+$$
 q_i^{t+\Delta t} = q_i^t + \Delta q_i
-]
+$$
 
 ---
 
