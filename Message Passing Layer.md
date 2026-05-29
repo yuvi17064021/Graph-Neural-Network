@@ -275,9 +275,7 @@ They have become one of the central architectures in modern graph representation
 
 ---
 
-# 🖼️ Image Placeholder Section
-
-The following section is reserved for adding four images related to:
+# 🖼️ Image Section
 
 1. Message passing workflow
 2. Graph node-edge representation
@@ -288,28 +286,24 @@ The following section is reserved for adding four images related to:
 
 ## Image 1
 
-*(Insert image here)*
 <img width="1711" height="1014" alt="image" src="https://github.com/user-attachments/assets/87dbfe85-9c7b-4723-ab64-ad9d796aa663" />
 
 ---
 
 ## Image 2
 
-*(Insert image here)*
 <img width="1011" height="478" alt="image" src="https://github.com/user-attachments/assets/65bc4046-124f-463a-9d46-f6c13e6077a2" />
 
 ---
 
 ## Image 3
 
-*(Insert image here)*
 <img width="1063" height="655" alt="image" src="https://github.com/user-attachments/assets/c0b3c72f-8550-466d-b491-02ae5121c1a9" />
 
 ---
 
 ## Image 4
 
-*(Insert image here)*
 <img width="1063" height="1074" alt="image" src="https://github.com/user-attachments/assets/52c0e00e-1d58-4516-bdae-7a7170bba607" />
 
 
