@@ -332,9 +332,9 @@ The section can be understood from three perspectives:
 
 The simulation domain is represented as a graph:
 
-[
+$$
 G = (V, E)
-]
+$$
 
 Where:
 
@@ -358,9 +358,9 @@ Each node stores:
 
 So each node feature vector becomes:
 
-[
+$$
 v_i = [p_i, T_i, velocity_i, boundary_flag]
-]
+$$
 
 ---
 
@@ -374,15 +374,15 @@ Each edge stores:
 
 * Relative displacement:
 
-[
+$$
 u_{ij} = x_i - x_j
-]
+$$
 
 * Euclidean distance:
 
-[
+$$
 |u_{ij}|
-]
+$$
 
 These encode:
 
@@ -416,9 +416,9 @@ The process consists of three stages.
 
 ## (1) Edge Update
 
-[
+$$
 e'*k = \phi^e(e_k, v*{r_k}, v_{s_k})
-]
+$$
 
 ### Intuition
 
@@ -436,17 +436,17 @@ Conceptually:
 
 ## (2) Aggregation
 
-[
+$$
 e'_i = \rho^{e \to v}(E'_i)
-]
+$$
 
 Incoming edge information is aggregated at each node.
 
 The paper uses summation:
 
-[
+$$
 \rho^{e \to v} = \sum
-]
+$$
 
 ### Physical Interpretation
 
@@ -459,9 +459,9 @@ This resembles:
 
 ## (3) Node Update
 
-[
+$$
 v'_i = \phi^v(e'_i, v_i)
-]
+$$
 
 Each node updates based on:
 
@@ -478,15 +478,15 @@ The update operators are implemented using neural networks.
 
 ### Edge Update Network
 
-[
+$$
 \phi^e = \mathrm{NN}_e
-]
+$$
 
 ### Node Update Network
 
-[
+$$
 \phi^v = \mathrm{NN}_v
-]
+$$
 
 Instead of explicitly solving PDEs, the model learns:
 
@@ -504,15 +504,15 @@ The architecture is formalized as a Message Passing Neural Network.
 
 ## Message Equation
 
-[
+$$
 k_i^{m+1} = \sum_{j \in N(i)} K_m(q_i^m, q_j^m, e_{ij})
-]
+$$
 
 ## Node Update Equation
 
-[
+$$
 q_i^{m+1} = \phi_m^v(q_i^m, k_i^{m+1})
-]
+$$
 
 ---
 
@@ -588,15 +588,15 @@ The encoder converts physical CFD variables into learned latent representations.
 
 ### Node Embeddings
 
-[
+$$
 v_i^E
-]
+$$
 
 ### Edge Embeddings
 
-[
+$$
 e_{ij}^E
-]
+$$
 
 ---
 
@@ -625,13 +625,13 @@ The paper uses:
 
 Each iteration updates:
 
-[
+$$
 e_{ij}^E \leftarrow f^M(...)
-]
+$$
 
-[
+$$
 v_i^E \leftarrow f^V(...)
-]
+$$
 
 ---
 
@@ -661,9 +661,9 @@ The decoder converts latent embeddings back into physical predictions.
 
 The model predicts:
 
-[
+$$
 \Delta q_i^{t+\Delta t}
-]
+$$
 
 This corresponds to changes in:
 
