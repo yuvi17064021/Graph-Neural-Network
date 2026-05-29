@@ -359,7 +359,7 @@ Each node stores:
 So each node feature vector becomes:
 
 $$
-v_i = [p_i, T_i, velocity_i, boundary__flag]
+v_i = [p_i, T_i, velocity_i, \text{boundary}\_\text{flag}]
 $$
 
 
