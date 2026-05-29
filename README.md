@@ -812,4 +812,3 @@ The next sections of the paper will likely describe:
 * Rollout evaluation
 
 These aspects are critical for determining whether the method can be reliably deployed for LS-DYNA-scale blast simulations.
-
